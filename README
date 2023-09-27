@@ -1,0 +1,16 @@
+This is an exercise for basic Frontend-Development skills published by havermi.co.il, 
+a coding community that focuses on Junior devs training, and is submitted to a code review.
+
+The Exercise:
+Display a "card view" of a random user, given by the API https://randomuser.me/api .
+
+* Bonus - do not use any framework, only vanilla HTML, CSS and JS.
+* Recommended Time limit - 2 hours.
+
+MY Exercise:
+I have submitted this exercise twice;
+1. First time - it worked but was very ugly because i had stopped at the 2 hour mark and had no time left to clean it.
+2. Second time - after getting the email Code Review, i took another 1 hour to refactor the code. the code is much much cleaner now.
+
+You are welcome to view the old code for comparison on the first-submittion branch. 
+
