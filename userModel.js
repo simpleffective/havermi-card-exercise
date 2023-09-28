@@ -1,4 +1,4 @@
-export default function create_user(user_json) {
+export default function createUser(user_json) {
     return {
         "username": user_json.login.username,
         "password": user_json.login.password,

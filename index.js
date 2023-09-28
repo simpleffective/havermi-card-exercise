@@ -1,27 +1,32 @@
-import get_random_user from './random_user.js' 
-import create_user from './user_model.js';
+import getRandomUserData from './getRandomUserData.js' 
+import createUser from './userModel.js';
 
 (async function init() {
-
-  // Fetch data and map it to the model
-  let data;
+  
+  let user;
   try {
-     data = await get_random_user();
+    user = await getUser();
   } catch (err) {
     console.error('Error:', err.message)
     return;
   }
-  let user = create_user(data);
-  let userView = formatUser(user);
 
   // Setup event listeners
   const card_bottom = document.getElementById('card-bottom');
   card_bottom.onmouseover = (evt) => onHover(evt, userView);
 
   // Render data
+  let userView = formatUser(user);
   updateCard(userView)
 
 })();
+
+async function getUser() {
+  // Fetch data and map it to the model
+  let data = await getRandomUserData();
+  let user = createUser(data);
+  return user;
+}
 
 function updateCard(userView) {
   const name_span = document.getElementById('name');

@@ -1,6 +1,6 @@
 const URL = "https://randomuser.me/api"
 
-export default async function get_random_user() {
+export default async function getRandomUserData() {
     let res = await fetch(URL);
 
     if (!res.ok)
