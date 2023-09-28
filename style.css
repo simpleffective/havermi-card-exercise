@@ -105,15 +105,12 @@ body {
 
 #card-bottom :nth-child(2) {
   counter-increment: button-idx;
-  background-position: calc(var(--background-x-space)*-2 + 1px)  var(--background-position-y);
+  background-position: calc(var(--background-x-space)*-1 + 1px)  var(--background-position-y);
 }
 
 #card-bottom :nth-child(3) {
   background-position: calc(var(--background-x-space)*-3 + 2px) var(--background-position-y);;
 }
 #card-bottom :nth-child(4) {
-  background-position: calc(var(--background-x-space)*-4 + 4px) var(--background-position-y);;
-}
-#card-bottom :nth-child(5) {
-  background-position: calc(var(--background-x-space)*-5 + 5px) var(--background-position-y);;
+  background-position: calc(var(--background-x-space)*-5 + 4px) var(--background-position-y);;
 }

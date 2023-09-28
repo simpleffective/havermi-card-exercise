@@ -2,8 +2,15 @@ import get_random_user from './random_user.js'
 import create_user from './user_model.js';
 
 (async function init() {
+
   // Fetch data and map it to the model
-  let data = await get_random_user();
+  let data;
+  try {
+     data = await get_random_user();
+  } catch (err) {
+    console.error('Error:', err.message)
+    return;
+  }
   let user = create_user(data);
   let userView = formatUser(user);
 
@@ -23,7 +30,7 @@ function updateCard(userView) {
   name_span.textContent = userView.name;
   img.src = userView.picture;
   
-  updateDetail(userView, 'email') // initial detail to show
+  updateDetail(userView, 'location') // initial detail to show
 }
 
 function updateDetail(userView, field) {

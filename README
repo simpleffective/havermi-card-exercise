@@ -9,7 +9,7 @@ Display a "card view" of a random user, given by the API https://randomuser.me/a
 
 MY Exercise:
 I have submitted this exercise twice;
-1. First time - it worked but was very ugly because i had stopped at the 2 hour mark and had no time left to clean it.
+1. First time - it worked but was quick & dirty due to the 2 hour time limit, and i had no time left to clean it.
 2. Second time - after getting the email Code Review, i took another 1 hour to refactor the code. the code is much much cleaner now.
 
 You are welcome to view the old code for comparison on the first-submittion branch. 
